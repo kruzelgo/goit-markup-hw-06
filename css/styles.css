@@ -460,7 +460,10 @@ body {
 .footer-icon-svg {
   fill: var(--light);
 }
-
+. {
+  fill: var(--light);
+  margin-left: 16px;
+}
 .footer-button {
   font-weight: 500;
   font-size: 16px;
@@ -505,8 +508,10 @@ body {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  gap: 24px;
+  color: var(--white-background);
 }
-.input-subscribe::placeholder {
+.input-subscribe::placeholder-shown {
   color: var(--white-background);
 }
 .footer-subscribe {
