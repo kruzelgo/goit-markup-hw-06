@@ -702,15 +702,17 @@ body {
 .input-modal:focus {
   border-color: var(--primary-brand);
 }
+
 .input-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
 
-.input-icon:focus {
+.input-modal:focus + .input-icon {
   fill: var(--primary-brand);
 }
 .input-comment {
@@ -760,9 +762,12 @@ body {
   justify-items: center;
   fill: transparent;
   padding-right: 8px;
+  justify-content: center;
 }
 
 .icon-check {
+  width: 15px;
+  height: 15px;
 }
 
 .modal-checkbox:checked + .privacy-terms span {
@@ -775,7 +780,7 @@ body {
 }
 
 .terms-send-button {
-  display: inline-flex;
+  display: block;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
@@ -794,4 +799,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   margin: 0 auto;
+}
+.terms-send-button:hover,
+.terms-send-button:focus {
+  background-color: var(--pressed-state);
 }
