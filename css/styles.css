@@ -493,6 +493,7 @@ body {
 }
 .subscribe-form {
   display: flex;
+  gap: 24px;
   margin-left: 80px;
   align-items: flex-end;
 }
@@ -508,7 +509,6 @@ body {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  gap: 24px;
   color: var(--white-background);
 }
 .input-subscribe::placeholder-shown {
@@ -761,13 +761,11 @@ body {
   align-items: center;
   justify-items: center;
   fill: transparent;
-  padding-right: 8px;
+  margin-right: 8px;
   justify-content: center;
 }
 
 .icon-check {
-  width: 15px;
-  height: 15px;
 }
 
 .modal-checkbox:checked + .privacy-terms span {
