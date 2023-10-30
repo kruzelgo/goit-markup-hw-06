@@ -156,8 +156,8 @@ body {
 .paragraph-footer {
   color: var(--light);
   font-weight: 400;
-  margin: 0;
-  max-width: 264px;
+
+  width: 264px;
 }
 .heading {
   font-size: 56px;
@@ -477,7 +477,7 @@ body {
   justify-content: center;
   padding: 8px 24px;
   align-items: center;
-  gap: 16px;
+
   border-radius: 4px;
   border: none;
   min-width: 165px;
